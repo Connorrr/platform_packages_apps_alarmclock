@@ -50,6 +50,7 @@ public class AlarmAlertFullScreen extends Activity {
     // These defaults must match the values in res/xml/settings.xml
     private static final String DEFAULT_SNOOZE = "10";
     private static final String DEFAULT_VOLUME_BEHAVIOR = "2";
+    private static final String TAG = "AlarmClock";
     protected static final String SCREEN_OFF = "screen_off";
 
     protected Alarm mAlarm;
@@ -69,6 +70,8 @@ public class AlarmAlertFullScreen extends Activity {
     @Override
     protected void onCreate(Bundle icicle) {
         super.onCreate(icicle);
+
+        Log.v("Righton Brother. Things R Cook'n");
 
         mAlarm = getIntent().getParcelableExtra(Alarms.ALARM_INTENT_EXTRA);
 
